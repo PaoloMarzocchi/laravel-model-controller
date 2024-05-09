@@ -9,11 +9,11 @@
                 <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
                     <li class="nav-item">
                         <a class="nav-link {{ Route::currentRouteName() == 'guests.home' ? 'my_active' : '' }}"
-                            href="#" aria-current="page">Home</a>
+                            href="{{ route('guests.home') }}" aria-current="page">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link {{ Route::currentRouteName() == 'guests.movies.index' ? 'my_active' : '' }}"
-                            href="#">Movies</a>
+                            href="{{ route('guests.movies.index') }}">Movies</a>
                     </li>
 
                 </ul>
