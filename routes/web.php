@@ -13,4 +13,4 @@ use App\Http\Controllers\Guests\PageController;
 |
 */
 
-Route::get('/', [PageController::class, 'index']);
+Route::get('/', [PageController::class, 'index'])->name('guests.home');

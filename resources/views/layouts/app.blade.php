@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Laravel movies @yield('page-title', 'Home')</title>
+    <title>Laravel movies | @yield('page-title', 'Home')</title>
 
     <!-- Fonts -->
     <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
@@ -16,11 +16,14 @@
 </head>
 
 <body>
-    <header>Header</header>
+
+    @include('partials.header')
+
     <main>
         @yield('content')
     </main>
-    <footer>Footer</footer>
+
+    @include('partials.footer')
 </body>
 
 </html>
