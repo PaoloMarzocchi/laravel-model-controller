@@ -1,35 +1,23 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container">
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+    <section id="jumbotron">
 
-            @forelse($movies as $key => $movie)
-                <div class="col">
-                    <div class="card p-4">
-                        <ul class="list-unstyled">
-                            <li>
-                                <h3 class="text-center">{{ $movie->title }}</h3>
-                            </li>
-                            <li>
-                                <strong>Original title:</strong> {{ $movie->original_title }}
-                            </li>
-                            <li>
-                                <strong>Nationality:</strong> {{ $movie->nationality }}
-                            </li>
-                            <li>
-                                <strong>Release date:</strong> {{ $movie->date }}
-                            </li>
-                            <li>
-                                <strong>Vote:</strong> {{ $movie->vote }}
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            @empty
-                <h2>Nothing found</h2>
-            @endforelse
+    </section>
+    <section id="welcome" class="py-4">
+        <div class="container text-center">
+            <h2>Welcome in our movies collection</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad ex suscipit a tenetur voluptatem provident
+                consectetur nisi fuga aliquid, fugiat cumque voluptatibus sunt repellendus exercitationem labore temporibus
+                illum voluptates, at eveniet error explicabo quasi perspiciatis harum iste. Dicta voluptate accusamus magnam
+                culpa voluptatem, dolorum aspernatur accusantium iusto vitae qui, repudiandae asperiores reprehenderit nulla
+                tenetur, veniam sint eaque ipsam modi ullam praesentium totam. Dignissimos quas recusandae, doloribus nemo
+                expedita qui alias rerum harum! Delectus eaque minus, fugit dolorum officia molestias, alias animi,
+                repellendus esse quia pariatur magni amet numquam est aliquid asperiores itaque minima! Nesciunt quos
+                asperiores quaerat odit tenetur perferendis.
 
+            </p>
         </div>
-    </div>
+    </section>
 @endsection

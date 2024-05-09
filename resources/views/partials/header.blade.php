@@ -1,8 +1,8 @@
 <header>
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+    <nav class="navbar navbar-expand-sm navbar-light">
         <div class="container">
             <a class="navbar-brand" href="#">
-                <img src="{{ Vite::asset('/resources/img/logo.png') }}" style="width: 7rem" alt="">
+                <img src="{{ Vite::asset('/resources/img/logo.png') }}" style="width: 5rem" alt="">
             </a>
 
             <div class="collapse navbar-collapse" id="collapsibleNavId">
